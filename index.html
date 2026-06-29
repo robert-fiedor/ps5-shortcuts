@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PS5 Shortcut Deck</title>
+    <link rel="stylesheet" href="styles.css?v=202606290001">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <div class="controller-mark" aria-hidden="true">
+            <span class="stick left-stick"></span>
+            <span class="stick right-stick"></span>
+            <span class="dpad"></span>
+            <span class="buttons"></span>
+          </div>
+          <div>
+            <h1>PS5 Shortcut Deck</h1>
+            <p>Quick controls and transcript notes formatted for phone lookup.</p>
+          </div>
+        </div>
+        <label class="search-wrap">
+          <span>Search</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="Game, shortcut, or effect">
+        </label>
+      </header>
+
+      <section class="source-alert" id="sourceAlert" hidden></section>
+
+      <section class="workspace" aria-label="Shortcut browser">
+        <aside class="game-list" aria-label="Games">
+          <div class="section-label">Games</div>
+          <nav id="gameNav"></nav>
+        </aside>
+
+        <section class="detail-panel" aria-live="polite">
+          <div class="detail-head">
+            <div>
+              <p class="eyebrow" id="selectedType"></p>
+              <h2 id="selectedTitle"></h2>
+            </div>
+            <a id="sourceLink" class="source-link" href="#" target="_blank" rel="noreferrer">Source</a>
+          </div>
+
+          <div class="shortcut-table" id="shortcutTable"></div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="script.js?v=202606290001"></script>
+  </body>
+</html>
