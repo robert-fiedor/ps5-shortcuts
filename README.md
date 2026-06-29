@@ -2,11 +2,11 @@
 
 A phone-first static web app for collecting PlayStation 5 game shortcuts.
 
-The initial source transcript is:
+The current source transcript is:
 
-https://robert-fiedor.github.io/youtube-transcriptions/transcripts/4PqGPZtyFtw/4PqGPZtyFtw.txt
+https://robert-fiedor.github.io/youtube-transcriptions/transcripts/DSD_fAtBQc4-The-Ultimate-CQC-Guide---Metal-Gear-Solid-DELTA-Snake-Eater/DSD_fAtBQc4-The-Ultimate-CQC-Guide---Metal-Gear-Solid-DELTA-Snake-Eater.txt
 
-That transcript does not mention PS5 games or controller shortcuts, so the current app displays the shortcut-style steps that are actually present in the source. The data model is ready for game shortcut entries once a PS5 controls transcript or list is added.
+The app extracts the PS5 CQC controls and practical tactics mentioned in the Metal Gear Solid Delta: Snake Eater transcript.
 
 ## Local use
 

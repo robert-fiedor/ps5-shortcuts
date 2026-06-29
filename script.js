@@ -1,68 +1,145 @@
 const SOURCE_URL =
-  "https://robert-fiedor.github.io/youtube-transcriptions/transcripts/4PqGPZtyFtw/4PqGPZtyFtw.txt";
+  "https://robert-fiedor.github.io/youtube-transcriptions/transcripts/DSD_fAtBQc4-The-Ultimate-CQC-Guide---Metal-Gear-Solid-DELTA-Snake-Eater/DSD_fAtBQc4-The-Ultimate-CQC-Guide---Metal-Gear-Solid-DELTA-Snake-Eater.txt";
 
 const entries = [
   {
-    id: "short-story-method",
-    title: "Short Story Method",
-    type: "Transcript extract",
+    id: "mgs-delta-cqc",
+    title: "Metal Gear Solid Delta: Snake Eater",
+    type: "CQC controls",
     sourceUrl: SOURCE_URL,
-    sourceStatus:
-      "The supplied transcript does not mention PlayStation, PS5 games, or controller shortcuts. These rows are the shortcuts/steps actually present in that source.",
+    sourceStatus: "",
     shortcuts: [
       {
-        shortcut: "Use real life",
-        name: "Start with something that happened to you",
+        shortcut: "R2, R2, R2",
+        name: "Three-hit CQC combo",
         effect:
-          "Use a personal experience as raw material, then fictionalize details to add stakes and shape.",
+          "Walk up to an enemy and press the CQC button three times. Snake throws two punches and a kick that knocks the enemy down.",
       },
       {
-        shortcut: "Change POV",
-        name: "Rewrite from another point of view",
+        shortcut: "R2 once or twice",
+        name: "Controlled punch combo",
         effect:
-          "Rotate through perspectives until the story belongs to the character with the strongest stake.",
+          "Use one or two punches, pause for Snake to reset, then repeat. This avoids the unpredictable launch from the full three-hit combo.",
       },
       {
-        shortcut: "Ticking clock",
-        name: "Add a countdown",
+        shortcut: "Left stick + R2",
+        name: "CQC slam or throwdown",
         effect:
-          "Give the story pressure by counting down to a tournament, deadline, trip ending, event, or decision.",
+          "Press R2 while pointing the analog stick in a direction to immediately throw the enemy down to the ground.",
       },
       {
-        shortcut: "Object",
-        name: "Choose a meaningful prop",
+        shortcut: "R2 on attack",
+        name: "Parry a close-range knife attack",
         effect:
-          "Use an object with emotional weight that appears across the story and changes what characters do.",
+          "When an alerted enemy swings at close range, time R2 to parry and throw them down. Works best with a CQC-compatible weapon.",
       },
       {
-        shortcut: "Transition",
-        name: "Find the 'and then one day' moment",
+        shortcut: "Triangle",
+        name: "Dive roll into an enemy",
         effect:
-          "Move the character from one mode of life into another, even if the shift is small or internal.",
+          "Press Triangle while moving to dive into an enemy. It can knock enemies out after repeated hits and leaves them stunned briefly.",
       },
       {
-        shortcut: "World event",
-        name: "Anchor the story in something recognizable",
+        shortcut: "Hold Triangle",
+        name: "Drop into crawl",
         effect:
-          "Connect the story to a public event, holiday, trend, or familiar reference so readers have a way in.",
+          "Hold Triangle instead of tapping it to fall to the ground and enter Snake's crawl animation.",
       },
       {
-        shortcut: "Opposites",
-        name: "Create binary forces",
+        shortcut: "Mk22 + Triangle",
+        name: "Instant tranquilizer finish",
         effect:
-          "Set up opposing people, values, or roles so the story has natural friction and conflict.",
+          "Shoot an enemy in the body with the tranquilizer, then dive roll into them to trigger the tranquilizer effect immediately.",
       },
       {
-        shortcut: "Plot shape",
-        name: "Use Freytag's Pyramid or another structure",
+        shortcut: "Hold Square",
+        name: "Drag a downed body",
         effect:
-          "Arrange exposition, rising action, climax, falling action, and ending so the story escalates cleanly.",
+          "Stand over a knocked-out enemy and hold Square to drag the body away from patrol routes or visible spots.",
       },
       {
-        shortcut: "Experiment",
-        name: "Try one formal risk",
+        shortcut: "Hold R2",
+        name: "Grab an enemy from behind",
         effect:
-          "Break the pattern with a form constraint, metafiction, an unreliable narrator, or another unusual move.",
+          "Approach from behind and hold R2 to restrain the enemy. From this hold, you can interrogate, choke, slit, drag, throw, or use them as cover.",
+      },
+      {
+        shortcut: "Hold R2 + hold L3",
+        name: "Interrogate",
+        effect:
+          "Keep holding the enemy with R2, then press and hold L3 to make them talk, insult Snake, or reveal information.",
+      },
+      {
+        shortcut: "Tap R2 repeatedly",
+        name: "Choke out or snap neck",
+        effect:
+          "While holding an enemy, tap R2 repeatedly to choke them out. Continuing after the knockout snaps their neck and counts as a kill.",
+      },
+      {
+        shortcut: "X",
+        name: "Slit throat",
+        effect:
+          "While holding an enemy from behind, press X to slit their throat. The transcript notes this remake control changed from the older version.",
+      },
+      {
+        shortcut: "Hold R2 + move",
+        name: "Drag a held enemy",
+        effect:
+          "Keep holding R2 and push the analog stick to walk the restrained enemy to another spot. Holding them too long can knock them out.",
+      },
+      {
+        shortcut: "Hold R2 + up/down",
+        name: "Throw from a hold",
+        effect:
+          "While restraining an enemy, press R2 with up or down on the analog stick to throw them in front of or behind Snake.",
+      },
+      {
+        shortcut: "Aim at downed enemy",
+        name: "Freeze on the ground",
+        effect:
+          "After knocking an enemy down with a roll, kick, grab, or throw, quickly point your weapon at them to make them stay frozen.",
+      },
+      {
+        shortcut: "Shoot near body",
+        name: "Shake out items",
+        effect:
+          "Once an enemy is frozen on the ground, shoot around their body to scare them into dropping inventory items.",
+      },
+      {
+        shortcut: "Hold-up aim",
+        name: "Freeze a standing enemy",
+        effect:
+          "Sneak up from behind or the side and point your weapon at the enemy. Snake says freeze, they drop their weapon, and you can demand items.",
+      },
+      {
+        shortcut: "L1",
+        name: "Stalk quietly",
+        effect:
+          "Hold L1 to walk very slowly and quietly when sneaking up on enemies, especially on harder difficulties.",
+      },
+      {
+        shortcut: "Held soldier",
+        name: "Use a human shield",
+        effect:
+          "Hold an enemy soldier from behind to stop other soldiers from shooting directly at Snake. This does not protect you with scientists or workers.",
+      },
+      {
+        shortcut: "Box or thrown item",
+        name: "Distract for CQC",
+        effect:
+          "Use the cardboard box, thrown food, a live snake, or a book to pull attention away and create an opening for a hold-up or CQC attack.",
+      },
+      {
+        shortcut: "TNT food storage",
+        name: "Make enemies vulnerable",
+        effect:
+          "Blow up food storage, leave the area, and return. Hungry enemies become more vulnerable to punches, kicks, and dive rolls.",
+      },
+      {
+        shortcut: "Check outfit",
+        name: "Confirm CQC compatibility",
+        effect:
+          "Some outfits block advanced CQC. You may still punch, kick, or dive roll, but grabs and slams can be unavailable.",
       },
     ],
   },
